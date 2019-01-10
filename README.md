@@ -52,9 +52,10 @@ where:
 *Example:*
 
 ```
+GITDIR=/Users/mosorio/repos/isi/ClimComp/
 docker run --rm \
     --name climcomp \
-    -v /Users/mosorio/repos/isi/ClimComp/:/ClimComp/ \
+    -v $GITDIR:/ClimComp/ \
     mosorio/climcomp:latest \
     python ClimComp.py  MonthlyDatasets FLDAS Rainf_f_tavg 32 36 13 17 6 8 2017
 ```
