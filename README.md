@@ -46,6 +46,21 @@ where:
 
 `python ClimComp.py '/Users/deborahkhider/Documents/MINT/Climate/MonthlyDatasets' FLDAS Rainf_f_tavg 32 36 13 17 6 8 2017`
 
+
+### <a name ="docker"> Docker Quickstart guide </a>
+
+*Example:*
+
+```
+docker run -ti \
+	--name climcomp \
+	-v /Users/mosorio/repos/isi/ClimComp/:/ClimComp/ \
+	climcomp 
+	python ClimComp.py  MonthlyDatasets FLDAS Rainf_f_tavg 32 36 13 17 6 8 2017
+
+```
+
+
 ## <a name="req">Requirements</a>
 
 ### Software requirements
