@@ -52,12 +52,11 @@ where:
 *Example:*
 
 ```
-docker run -ti \
-	--name climcomp \
-	-v /Users/mosorio/repos/isi/ClimComp/:/ClimComp/ \
-	climcomp 
-	python ClimComp.py  MonthlyDatasets FLDAS Rainf_f_tavg 32 36 13 17 6 8 2017
-
+docker run --rm \
+    --name climcomp \
+    -v /Users/mosorio/repos/isi/ClimComp/:/ClimComp/ \
+    mosorio/climcomp:latest \
+    python ClimComp.py  MonthlyDatasets FLDAS Rainf_f_tavg 32 36 13 17 6 8 2017
 ```
 
 
